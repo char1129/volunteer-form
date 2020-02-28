@@ -4,25 +4,27 @@
   <meta charset="utf-8">
   <title>Contact form</title>
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="gutter-1-2">
-    <h1>Apply to be a tree planter</h1>
-    <p>Apply to be a tree planter
-    Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  <header class="grid gutter-1-2">
+    <div class="unit">
+      <h1>Apply to be a tree planter</h1>
+      <p>Apply to be a tree planter.Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    </div>
   </header>
-  <section class="island-1-2">
+  <section class="grid island-1-2">
     <form method="POST" action="https://formspree.io/mvorakyw">
-      <div class="max-length">
+      <div class="unit max-length">
 
         <div class="container push">
-          <h3>Personal details</h3>
+          <p class="heading">Personal details</p>
           <div class="push">
-            <label for="name">Full Name</label>
+            <label for="name">Full name</label>
             <input id="name" required>
             <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
           </div>
@@ -37,8 +39,8 @@
           </div>
           <div class="push">
             <label for="tshirt">T-shirt size</label>
-            <select id="tshirt" placeholder="Select a t-shirt size">
-              <option>Select a t-shirt size
+            <select id="tshirt">
+              <option>Select a t-shirt size</option>
               <option>Fitted: XS</option>
               <option>Fitted: S</option>
               <option>Fitted: M</option>
@@ -56,12 +58,12 @@
             <input id="email" type="email" required>
           </div>
           <div class="push">
-            <label for="phone">Phone number<p class="opt italic">(optional)</p></label>
+            <label for="phone">Phone number <span class="italic">(optional)</span></label>
             <input id="phone" type="tel" required>
           </div>
         </div>
         <div class="container">
-          <h3>Address</h3>
+          <p class="heading">Address</p>
           <div class="push">
             <label for="street">Street address</label>
             <input id="street" required>
@@ -72,8 +74,8 @@
           </div>
           <div class="push">
             <label for="province">Province</label>
-            <select id="province" placeholder="Select a province">
-              <option>Select a province
+            <select id="province">
+              <option>Select a province</option>
               <option>Alberta</option>
               <option>British Columbia</option>
               <option>Manitoba</option>
@@ -96,7 +98,7 @@
         </div>
         <div class="container">
           <div class="push">
-            <h3>What activities are you interested in helping with?</h3>
+            <p class="heading">What activities are you interested in helping with?</p>
             <input id="dig" type="checkbox">
             <label for="dig">Digging holes</label>
 
@@ -122,7 +124,7 @@
             <label for="manage">Managing people</label>
           </div>
           <div class="push">
-            <h3>DO you have any experience with the following?</h3>
+            <p class="heading">DO you have any experience with the following?</p>
             <input id="shovels" type="checkbox">
             <label for="shovels">Shovels</label>
 
@@ -145,26 +147,26 @@
             <label for="atv">ATVs</label>
 
             <input id="plant" type="checkbox">
-            <label for="plant"">Plant identification</label>
+            <label for="plant">Plant identification</label>
 
             <input id="special" type="checkbox">
-            <label for="special"">Special event planning</label>
+            <label for="special">Special event planning</label>
 
             <input id="speak" type="checkbox">
-            <label for="speak"">Speaking to groups</label>
+            <label for="speak">Speaking to groups</label>
           </div>
         </div>
         <div class="container">
           <div class="push">
-            <h3>Do you have a valid driver's license?</h3>
+            <p class="heading">Do you have a valid driver's license?</p>
             <input id="yes0" type="radio" name="drive">
-            <label for="yes0"">Yes</label>
+            <label for="yes0">Yes</label>
 
             <input id="no0" type="radio" name="drive">
             <label for="no0">No</label>
           </div>
           <div class="push">
-            <h3>Do you have a pick-up truck you'd be willing to use?</h3>
+            <p class="heading">Do you have a pick-up truck you'd be willing to use?</p>
             <input id="yes1" type="radio" name="truck">
             <label for="yes1">Yes</label>
 
@@ -172,7 +174,7 @@
             <label for="no1">No</label>
           </div>
           <div class="push">
-            <h3>Do you have up-to-date first-aid certification?</h3>
+            <p class="heading">Do you have up-to-date first-aid certification?</p>
             <input id="yes2" type="radio" name="cert">
             <label for="yes2">Yes</label>
 
@@ -181,11 +183,11 @@
           </div>
           <div class="push">
             <div class="container">
-              <label for="text" class="txtbx">Please let us know any comments or questions you may have.<p class="opt italic">(optional)</p></label>
-              <input id="text" type="textarea">
+              <label for="text" class="txtbx">Please let us know any comments or questions you may have.<span class="italic">(optional)</span></label>
+              <textarea id="text"></textarea>
             </div>
           </div>
-
+        </div>
       </div>
     </form>
   </section>

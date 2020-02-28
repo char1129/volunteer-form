@@ -33,17 +33,18 @@ input, option {
 .txtbx {
   padding-bottom: .5rem;
 }
+
 p {
   margin: 0;
   display: inline-block;
 }
 
-.opt {
+span {
   color: #70ad55;
 }
 
 label {
-  display: block
+  display: block;
 }
 
 h3 {
