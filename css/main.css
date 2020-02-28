@@ -1,7 +1,20 @@
 html {
-  font-family: sans-serif;
+  font-family: "Noto Serif", serif;
 }
 
 .contact {
   background-color: #f2f2f2;
+}
+
+.container {
+  border-bottom: 1px solid #6e8c62;
+}
+
+header, footer {
+  background-color: #70ad55;
+  color: #fff;
+}
+
+input {
+  border-color: #6e8c62;
 }
