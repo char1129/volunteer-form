@@ -15,6 +15,14 @@ header, footer {
   color: #fff;
 }
 
-input {
+input, option {
+  border-color: #6e8c62;
+}
+
+[type="radio"] {
+  border: 2px solid #6e8c62;
+}
+
+[type="checkbox"] {
   border-color: #6e8c62;
 }
