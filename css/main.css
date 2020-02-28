@@ -8,6 +8,7 @@ html {
 
 .container {
   border-bottom: 1px solid #6e8c62;
+  padding-bottom: 2rem;
 }
 
 header, footer {
@@ -19,10 +20,32 @@ input, option {
   border-color: #6e8c62;
 }
 
-[type="radio"] {
-  border: 2px solid #6e8c62;
+[type="radio"] + label {
+  border-color: #6e8c62;
 }
 
-[type="checkbox"] {
+[type="checkbox"] + label {
   border-color: #6e8c62;
+  display: block;
+  padding-bottom: .25rem;
+}
+
+.txtbx {
+  padding-bottom: .5rem;
+}
+p {
+  margin: 0;
+  display: inline-block;
+}
+
+.opt {
+  color: #70ad55;
+}
+
+label {
+  display: block
+}
+
+h3 {
+  padding-top: 1rem;
 }

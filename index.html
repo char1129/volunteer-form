@@ -10,32 +10,32 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="gutter-1-2">
     <h1>Apply to be a tree planter</h1>
     <p>Apply to be a tree planter
     Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
   </header>
-  <section>
+  <section class="island-1-2">
     <form method="POST" action="https://formspree.io/mvorakyw">
       <div class="max-length">
 
-        <div class="container">
+        <div class="container push">
           <h3>Personal details</h3>
-          <div>
+          <div class="push">
             <label for="name">Full Name</label>
             <input id="name" required>
-            <p></p>
+            <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
           </div>
-          <div>
+          <div class="push">
             <label for="call">What should we call you?</label>
             <input id="call" required>
-            <p></p>
+            <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
           </div>
-          <div>
+          <div class="push">
             <label for="date">Date of birth</label>
             <input id="date" type="date">
           </div>
-          <div>
+          <div class="push">
             <label for="tshirt">T-shirt size</label>
             <select id="tshirt" placeholder="Select a t-shirt size">
               <option>Select a t-shirt size
@@ -51,26 +51,26 @@
               <option>Straight-cut: XL</option>
             </select>
           </div>
-          <div>
+          <div class="push">
             <label for="email">Email</label>
             <input id="email" type="email" required>
           </div>
-          <div>
-            <label for="phone">Phone number<p>(optional)</p></label>
+          <div class="push">
+            <label for="phone">Phone number<p class="opt italic">(optional)</p></label>
             <input id="phone" type="tel" required>
           </div>
         </div>
         <div class="container">
           <h3>Address</h3>
-          <div>
+          <div class="push">
             <label for="street">Street address</label>
             <input id="street" required>
           </div>
-          <div>
+          <div class="push">
             <label for="city">City</label>
             <input id="city" required>
           </div>
-          <div>
+          <div class="push">
             <label for="province">Province</label>
             <select id="province" placeholder="Select a province">
               <option>Select a province
@@ -89,13 +89,13 @@
               <option>Yukon</option>
             </select>
           </div>
-          <div>
+          <div class="push">
             <label for="postal">Postal code</label>
             <input id="postal" required>
           </div>
         </div>
         <div class="container">
-          <div>
+          <div class="push">
             <h3>What activities are you interested in helping with?</h3>
             <input id="dig" type="checkbox">
             <label for="dig">Digging holes</label>
@@ -121,7 +121,7 @@
             <input id="manage" type="checkbox">
             <label for="manage">Managing people</label>
           </div>
-          <div>
+          <div class="push">
             <h3>DO you have any experience with the following?</h3>
             <input id="shovels" type="checkbox">
             <label for="shovels">Shovels</label>
@@ -155,33 +155,33 @@
           </div>
         </div>
         <div class="container">
-          <div>
+          <div class="push">
             <h3>Do you have a valid driver's license?</h3>
-            <input id="yes" type="radio" name="drive">
-            <label for="yes"">Yes</label>
+            <input id="yes0" type="radio" name="drive">
+            <label for="yes0"">Yes</label>
 
-            <input id="no" type="radio" name="drive">
-            <label for="no"">No</label>
+            <input id="no0" type="radio" name="drive">
+            <label for="no0">No</label>
           </div>
-          <div>
+          <div class="push">
             <h3>Do you have a pick-up truck you'd be willing to use?</h3>
-            <input id="yes" type="radio" name="truck">
-            <label for="yes"">Yes</label>
+            <input id="yes1" type="radio" name="truck">
+            <label for="yes1">Yes</label>
 
-            <input id="no" type="radio" name="truck">
-            <label for="no"">No</label>
+            <input id="no1" type="radio" name="truck">
+            <label for="no1">No</label>
           </div>
-          <div>
+          <div class="push">
             <h3>Do you have up-to-date first-aid certification?</h3>
-            <input id="yes" type="radio" name="cert">
-            <label for="yes">Yes</label>
+            <input id="yes2" type="radio" name="cert">
+            <label for="yes2">Yes</label>
 
-            <input id="no" type="radio" name="cert">
-            <label for="no">No</label>
+            <input id="no2" type="radio" name="cert">
+            <label for="no2">No</label>
           </div>
-          <div>
+          <div class="push">
             <div class="container">
-              <label for="text">Please let us know any comments or questions you may have.<p>(optional)</p></label>
+              <label for="text" class="txtbx">Please let us know any comments or questions you may have.<p class="opt italic">(optional)</p></label>
               <input id="text" type="textarea">
             </div>
           </div>
