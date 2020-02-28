@@ -15,15 +15,43 @@
     <p></p>
   </header>
   <section class="section1">
-    <form>
+    <form method="POST" action="https://formspree.io/mvorakyw">
       <div>
         <div>
           <label for="name">Full Name</label>
           <input id="name" required>
           <p></p>
+        </div>
+        <div>
+          <label for="call">What should we call you?</label>
+          <input id="call" required>
+          <p></p>
+        </div>
+        <div>
+          <label for="date">Date of birth</label>
+          <input id="date" type="date">
+        </div>
+        <div>
+          <label for="tshirt">T-shirt size</label>
+          <select id="tshirt">
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" required>
+        </div>
+        <div>
+          <label for="phone">Phone number<p>(optional)</p></label>
+          <input id="phone" type="tel" required>
+        </div>
 
 
-
-
+    </form>
+  </section>
 </body>
 </html>
