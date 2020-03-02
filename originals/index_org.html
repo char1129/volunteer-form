@@ -11,26 +11,26 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="grid gutter-1-2 pad-t">
-    <div class="unit">
-      <h1 class="bold pad-0 push-1-2">Apply to be a tree planter</h1>
-      <p class="mega push pad-b-1-2">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  <header class="grid gutter-1-2 bold">
+    <div class=" headerunit unit">
+      <h1 class="bold pad-0">Apply to be a tree planter</h1>
+      <p class="summary mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
     </div>
   </header>
-  <section class="grid gutter-1-2 pad-t-2 push-2">
+  <section class="grid island-1-2">
     <div class="unit max-length">
       <form method="POST" action="https://formspree.io/mvorakyw">
         <div class="container">
-          <p class="giga bold pad-b">Personal details</p>
-          <div class="push pad-t-1-2">
+          <p class="heading giga bold">Personal details</p>
+          <div class="push">
             <label for="name">Full name</label>
             <input id="name" required>
-            <p class="italic nano">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+            <p class="desc italic nano">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
           </div>
           <div class="push">
             <label for="call">What should we call you?</label>
             <input id="call" required>
-            <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
+            <p class="desc italic micro">What all your friends call you, e.g. “Liz”.</p>
           </div>
           <div class="push">
             <label for="date">Date of birth</label>
@@ -56,13 +56,13 @@
             <label for="email">Email</label>
             <input id="email" type="email" required>
           </div>
-          <div class="pad-b-2">
+          <div class="push-1-2">
             <label for="phone">Phone number <span class="italic">(optional)</span></label>
             <input id="phone" type="tel" required>
           </div>
         </div>
-        <div class="container pad-t-2">
-          <p class=" heading bold giga push-3-4">Address</p>
+        <div class="container">
+          <p class=" heading bold giga pad-t-1-2">Address</p>
           <div class="push">
             <label for="street">Street address</label>
             <input id="street" required>
@@ -97,7 +97,7 @@
         </div>
         <div class="container">
           <div class="push">
-            <p class="giga">What activities are you interested in helping with?</p>
+            <p class="heading giga">What activities are you interested in helping with?</p>
             <input id="dig" type="checkbox">
             <label for="dig">Digging holes</label>
 
@@ -123,7 +123,7 @@
             <label for="manage">Managing people</label>
           </div>
           <div class="push">
-            <p class="giga">Do you have any experience with the following?</p>
+            <p class="heading giga">Do you have any experience with the following?</p>
             <input id="shovels" type="checkbox">
             <label for="shovels">Shovels</label>
 
@@ -157,7 +157,7 @@
         </div>
         <div class="container">
           <fieldset class="push">
-            <legend class="giga pad-t-2">Do you have a valid driver's license?</legend>
+            <legend class="heading giga pad-t-2">Do you have a valid driver's license?</legend>
             <input id="yes0" type="radio" name="drive">
             <label for="yes0">Yes</label>
 
@@ -173,7 +173,7 @@
             <label for="no1">No</label>
           </fieldset>
           <fieldset class="push">
-            <legend class="giga">Do you have up-to-date first-aid certification?</legend>
+            <legend class="heading giga">Do you have up-to-date first-aid certification?</legend>
             <input id="yes2" type="radio" name="cert">
             <label for="yes2">Yes</label>
 
