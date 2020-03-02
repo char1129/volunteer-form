@@ -7,13 +7,18 @@ html {
 }
 
 .container {
-  border-bottom: 1px solid #6e8c62;
+  border-bottom: 1px solid #70ad55;
   padding-bottom: 2rem;
 }
 
 header, footer {
   background-color: #70ad55;
   color: #fff;
+  padding: 2rem 0;
+}
+
+.headerunit {
+  padding: 1.5rem 0 2.5rem;
 }
 
 input, option {
@@ -22,6 +27,7 @@ input, option {
 
 [type="radio"] + label {
   border-color: #6e8c62;
+  padding-right: 1rem;
 }
 
 [type="checkbox"] + label {
@@ -37,6 +43,15 @@ input, option {
 p {
   margin: 0;
   display: inline-block;
+  padding: 1rem 0;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  padding-bottom: .5rem;
 }
 
 span {
@@ -44,9 +59,48 @@ span {
 }
 
 label {
+  padding-bottom: .2rem;
   display: block;
 }
 
 h3 {
   padding-top: 1rem;
+}
+
+hr {
+  border: .5px solid #6e8c62;
+}
+
+button, .btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #6e8c62;
+  border-color: #6e8c62;
+  padding: .375em 2em .42em;
+}
+
+.summary, .desc {
+  padding: 0;
+}
+
+.btnpad {
+  padding-top: 1rem;
+  border-color: #6e8c62;
+  color: #fff;
+}
+
+@media only screen and (min-width: 25em) {
+
+}
+
+@media only screen and (min-width: 38em) {
+
+}
+
+@media only screen and (min-width: 60em) {
+
+}
+
+@media only screen and (min-width: 90em) {
+
 }

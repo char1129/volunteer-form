@@ -11,27 +11,26 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="grid gutter-1-2">
-    <div class="unit">
-      <h1>Apply to be a tree planter</h1>
-      <p>Apply to be a tree planter.Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  <header class="grid gutter-1-2 bold">
+    <div class=" headerunit unit">
+      <h1 class="bold">Apply to be a tree planter</h1>
+      <p class="summary">Apply to be a tree planter. Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
     </div>
   </header>
   <section class="grid island-1-2">
-    <form method="POST" action="https://formspree.io/mvorakyw">
-      <div class="unit max-length">
-
+    <div class="unit max-length">
+      <form method="POST" action="https://formspree.io/mvorakyw">
         <div class="container push">
-          <p class="heading">Personal details</p>
+          <p class="heading giga bold">Personal details</p>
           <div class="push">
             <label for="name">Full name</label>
             <input id="name" required>
-            <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+            <p class="desc italic nano">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
           </div>
           <div class="push">
             <label for="call">What should we call you?</label>
             <input id="call" required>
-            <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
+            <p class="desc italic micro">What all your friends call you, e.g. “Liz”.</p>
           </div>
           <div class="push">
             <label for="date">Date of birth</label>
@@ -40,7 +39,7 @@
           <div class="push">
             <label for="tshirt">T-shirt size</label>
             <select id="tshirt">
-              <option>Select a t-shirt size</option>
+              <option value="">Select a t-shirt size</option>
               <option>Fitted: XS</option>
               <option>Fitted: S</option>
               <option>Fitted: M</option>
@@ -57,13 +56,13 @@
             <label for="email">Email</label>
             <input id="email" type="email" required>
           </div>
-          <div class="push">
+          <div class="push-1-2">
             <label for="phone">Phone number <span class="italic">(optional)</span></label>
             <input id="phone" type="tel" required>
           </div>
         </div>
         <div class="container">
-          <p class="heading">Address</p>
+          <p class="bold giga">Address</p>
           <div class="push">
             <label for="street">Street address</label>
             <input id="street" required>
@@ -75,7 +74,7 @@
           <div class="push">
             <label for="province">Province</label>
             <select id="province">
-              <option>Select a province</option>
+              <option value="">Select a province</option>
               <option>Alberta</option>
               <option>British Columbia</option>
               <option>Manitoba</option>
@@ -98,7 +97,7 @@
         </div>
         <div class="container">
           <div class="push">
-            <p class="heading">What activities are you interested in helping with?</p>
+            <p class="heading giga">What activities are you interested in helping with?</p>
             <input id="dig" type="checkbox">
             <label for="dig">Digging holes</label>
 
@@ -124,7 +123,7 @@
             <label for="manage">Managing people</label>
           </div>
           <div class="push">
-            <p class="heading">DO you have any experience with the following?</p>
+            <p class="heading giga">Do you have any experience with the following?</p>
             <input id="shovels" type="checkbox">
             <label for="shovels">Shovels</label>
 
@@ -157,39 +156,43 @@
           </div>
         </div>
         <div class="container">
-          <div class="push">
-            <p class="heading">Do you have a valid driver's license?</p>
+          <fieldset class="push">
+            <legend class="heading giga pad-t-2">Do you have a valid driver's license?</legend>
             <input id="yes0" type="radio" name="drive">
             <label for="yes0">Yes</label>
 
             <input id="no0" type="radio" name="drive">
             <label for="no0">No</label>
-          </div>
-          <div class="push">
-            <p class="heading">Do you have a pick-up truck you'd be willing to use?</p>
+          </fieldset>
+          <fieldset class="push">
+            <legend class="heading giga">Do you have a pick-up truck you'd be willing to use?</legend>
             <input id="yes1" type="radio" name="truck">
             <label for="yes1">Yes</label>
 
             <input id="no1" type="radio" name="truck">
             <label for="no1">No</label>
-          </div>
-          <div class="push">
-            <p class="heading">Do you have up-to-date first-aid certification?</p>
+          </fieldset>
+          <fieldset class="push">
+            <legend class="heading giga">Do you have up-to-date first-aid certification?</legend>
             <input id="yes2" type="radio" name="cert">
             <label for="yes2">Yes</label>
 
             <input id="no2" type="radio" name="cert">
             <label for="no2">No</label>
-          </div>
+          </fieldset>
+          <hr>
           <div class="push">
             <div class="container">
-              <label for="text" class="txtbx">Please let us know any comments or questions you may have.<span class="italic">(optional)</span></label>
+              <label for="text" class="txtbx">Please let us know any comments or questions you may have. <span class="italic">(optional)</span></label>
               <textarea id="text"></textarea>
             </div>
           </div>
+          <div class="btnpad">
+            <button class="btn" type="submit">Apply</button>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </section>
   <footer>
     <p>© Tree Hugger International Organization</p>
