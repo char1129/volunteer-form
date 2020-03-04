@@ -15,9 +15,8 @@ input, option {
   border-color: #6e8c62;
 }
 
-[type="checkbox"] + label {
+input[type="checkbox"] + label::before {
   border-color: #6e8c62;
-  display: block;
 }
 
 p {
@@ -65,8 +64,9 @@ button, .btn {
 }
 
 .container {
-  border-bottom: 1px solid #70ad55;
+  border-top: 1px solid #70ad55;
 }
+
 
 @media only screen and (min-width: 25em) {
 
