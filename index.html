@@ -21,8 +21,8 @@
     <div class="unit max-length">
       <form method="POST" action="https://formspree.io/mvorakyw">
         <div>
-          <p class="giga bold pad-b">Personal details</p>
-          <div class="push pad-t-1-2">
+          <p class="unit xs-1 giga bold pad-b">Personal details</p>
+          <div class="unit m-1-2 push pad-t-1-2">
             <label for="name">Full name</label>
             <input id="name" required>
             <p class="italic nano">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
@@ -61,7 +61,7 @@
             <input id="phone" type="tel" required>
           </div>
         </div>
-        <div class="container pad-t-2 push-1-2">
+        <div class="container pad-t-2 push-2">
           <div class="pad-b-1-8">
             <p class=" heading bold giga push-3-4">Address</p>
             <div class="push pad-t-1-2">
@@ -91,17 +91,15 @@
                 <option>Yukon</option>
               </select>
             </div>
-            <div class="pad-t-3-4">
-              <div class="push">
-                <label for="postal">Postal code</label>
-                <input id="postal" required>
-              </div>
+            <div class="pad-t-1-2">
+              <label for="postal">Postal code</label>
+              <input id="postal" required>
             </div>
           </div>
         </div>
         <div class="container">
           <fieldset class="push-2 pad-t-1-2">
-            <legend class="giga bold pad-t-2">What activities are you interested in helping with?</legend>
+            <legend class="giga bold pad-t-2 push-r">What activities are you interested in helping with?</legend>
             <div class="grid">
               <div class="unit xs-1 s-1 m-1-2 l-1-2">
                 <div class="pad-t-1-8">
@@ -120,6 +118,8 @@
                   <input id="drive" type="checkbox">
                   <label for="drive">Driving people</label>
                 </div>
+              </div>
+              <div class="unit xs-1 s-1 m-1-2 l-1-2">
                 <div class="pad-t-1-8">
                   <input id="trans" type="checkbox">
                   <label for="trans">Transporting trees</label>
@@ -141,100 +141,93 @@
           </fieldset>
         </div>
         <fieldset class="push">
-          <legend class="giga bold pad-b-1-2">Do you have any experience with the following?</legend>
+          <legend class="giga bold pad-b push-r">Do you have any experience with the following?</legend>
           <div class="grid">
             <div class="unit xs-1 s-1 m-1-2 l-1-2">
               <div>
                 <input id="shovels" type="checkbox">
                 <label for="shovels">Shovels</label>
               </div>
-              <div>
+              <div class="pad-t-1-8">
                 <input id="gps" type="checkbox">
                 <label for="gps">Hand-held GPS</label>
               </div>
-              <div>
+              <div class="pad-t-1-8">
                 <input id="wb" type="checkbox">
                 <label for="wb">Writing & blogging</label>
               </div>
-              <div>
+              <div class="pad-t-1-8">
                 <input id="graphy" type="checkbox">
                 <label for="graphy">Photography</label>
               </div>
-              <div>
+              <div class="pad-t-1-8">
                 <input id="trail" type="checkbox">
                 <label for="trail">Trail & hill climbing</label>
               </div>
             </div>
             <div class="unit xs-1 s-1 m-1-2 l-1-2">
-              <div>
+              <div class="pad-t-1-8">
                 <input id="bush" type="checkbox">
                 <label for="bush">Bush craft</label>
               </div>
-              <div>
+              <div class="pad-t-1-8">
                 <input id="atv" type="checkbox">
                 <label for="atv">ATVs</label>
               </div>
-              <div>
+              <div class="pad-t-1-8">
                 <input id="plant" type="checkbox">
                 <label for="plant">Plant identification</label>
               </div>
-              <div>
+              <div class="pad-t-1-8">
                 <input id="special" type="checkbox">
                 <label for="special">Special event planning</label>
               </div>
-              <div>
+              <div class="pad-t-1-8 pad-b-1-8">
                 <input id="speak" type="checkbox">
                 <label for="speak">Speaking to groups</label>
               </div>
             </div>
           </div>
         </fieldset>
-        <div class="container">
-          <fieldset class="push">
+        <div class="container pad-t-2">
+          <fieldset class="push-2 pad-t-1-2">
             <legend class="giga">Do you have a valid driver's license?</legend>
             <input id="yes0" type="radio" name="drive">
             <label for="yes0">Yes</label>
             <input id="no0" type="radio" name="drive">
             <label for="no0">No</label>
           </fieldset>
-          <fieldset class="push">
+          <fieldset class="push-2 pad-t-1-2">
             <legend class="heading giga">Do you have a pick-up truck you'd be willing to use?</legend>
-            <div class="pad-r">
-              <input id="yes1" type="radio" name="truck">
-            </div>
-            <div>
-              <label for="yes1">Yes</label>
-            </div>
-            <div>
-              <input id="no1" type="radio" name="truck">
-            </div>
-            <div>
-              <label for="no1">No</label>
-            </div>
+            <input id="yes1" type="radio" name="truck">
+            <label for="yes1">Yes</label>
+            <input id="no1" type="radio" name="truck">
+            <label for="no1">No</label>
           </fieldset>
         </div>
-        <fieldset class="push">
-          <legend class="giga">Do you have up-to-date first-aid certification?</legend>
+        <fieldset class="push-2 pad-t-1-2">
+          <legend class="giga pad-t-1-4">Do you have up-to-date first-aid certification?</legend>
           <input id="yes2" type="radio" name="cert">
           <label for="yes2">Yes</label>
           <input id="no2" type="radio" name="cert">
           <label for="no2">No</label>
         </fieldset>
         <hr>
-        <div class="push">
-          <div class="container">
-            <label for="text" class="txtbx">Please let us know any comments or questions you may have. <span class="italic">(optional)</span></label>
-            <textarea id="text"></textarea>
-          </div>
+        <div class="push giga pad-t push-2 push-r-3-4 bold">
+          <label for="text" class="txtbx pad-t-1-4 pad-b-1-2">Please let us know any comments or questions you may have. <span class="italic">(optional)</span></label>
+          <textarea id="text"></textarea>
+        </div>
+        <div class="push-2">
+          <hr>
         </div>
         <div class="btnpad">
-          <button class="btn" type="submit">Apply</button>
+          <button class="btn bold giga" type="submit">Apply</button>
         </div>
       </form>
     </div>
   </section>
-  <footer>
-    <p>© Tree Hugger International Organization</p>
+  <footer class="pad-b pad-t">
+    <p class="bold">© Tree Hugger International Organization</p>
   </footer>
 </body>
 </html>
