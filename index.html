@@ -10,69 +10,84 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+
   <header class="grid gutter-1-2 pad-t">
     <div class="unit">
       <h1 class="bold pad-0 push-1-2">Apply to be a tree planter</h1>
       <p class="mega push pad-b-1-2">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
     </div>
   </header>
-  <section class="grid gutter-1-2 pad-t-2 push-2">
-    <div class="unit max-length">
+
+
+  <section class="grid gutter-1-2 pad-t-2 push-2 max-length">
+    <div class="unit">
+
       <form method="POST" action="https://formspree.io/mvorakyw">
-        <div>
+        <div class="grid">
           <p class="unit xs-1 giga bold pad-b">Personal details</p>
-          <div class="unit m-1-2 push pad-t-1-2">
-            <label for="name">Full name</label>
-            <input id="name" required>
-            <p class="italic nano">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+          <div class="unit m-1-2">
+            <div class="pad-t-1-2 push-r">
+              <label for="name">Full name</label>
+              <input id="name" required>
+              <p class="italic nano">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+            </div>
+            <div class="pad-t push-r">
+              <label for="call">What should we call you?</label>
+              <input id="call" required>
+              <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
+            </div>
+            <div class="dob push-3-4 pad-t push-r">
+              <label for="date">Date of birth</label>
+              <input id="date" type="date">
+            </div>
           </div>
-          <div class="push">
-            <label for="call">What should we call you?</label>
-            <input id="call" required>
-            <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
-          </div>
-          <div class="push">
-            <label for="date">Date of birth</label>
-            <input id="date" type="date">
-          </div>
-          <div class="push">
-            <label for="tshirt">T-shirt size</label>
-            <select id="tshirt">
-              <option value="">Select a t-shirt size</option>
-              <option>Fitted: XS</option>
-              <option>Fitted: S</option>
-              <option>Fitted: M</option>
-              <option>Fitted: L</option>
-              <option>Fitted: XL</option>
-              <option>Straight-cut: XS</option>
-              <option>Straight-cut: S</option>
-              <option>Straight-cut: M</option>
-              <option>Straight-cut: L</option>
-              <option>Straight-cut: XL</option>
-            </select>
-          </div>
-          <div class="push">
-            <label for="email">Email</label>
-            <input id="email" type="email" required>
-          </div>
-          <div class="pad-b-2">
-            <label for="phone">Phone number <span class="italic">(optional)</span></label>
-            <input id="phone" type="tel" required>
+          <div class="unit m-1-2">
+            <div class="push-1-4 pad-t-1-2 push-r">
+              <label for="tshirt">T-shirt size</label>
+              <select id="tshirt">
+                <option value="">Select a t-shirt size</option>
+                <option>Fitted: XS</option>
+                <option>Fitted: S</option>
+                <option>Fitted: M</option>
+                <option>Fitted: L</option>
+                <option>Fitted: XL</option>
+                <option>Straight-cut: XS</option>
+                <option>Straight-cut: S</option>
+                <option>Straight-cut: M</option>
+                <option>Straight-cut: L</option>
+                <option>Straight-cut: XL</option>
+              </select>
+            </div>
+            <div class="pad-t push-r">
+              <label for="email">Email</label>
+              <input id="email" type="email" required>
+            </div>
+            <div class="pad-b-2 pad-t push-r">
+              <label for="phone">Phone number <span class="italic">(optional)</span></label>
+              <input id="phone" type="tel" required>
+            </div>
           </div>
         </div>
-        <div class="container pad-t-2 push-2">
+
+        <div class="container grid pad-t-2 push-2">
+          <div class="max-length">
           <div class="pad-b-1-8">
-            <p class=" heading bold giga push-3-4">Address</p>
-            <div class="push pad-t-1-2">
+            <p class=" unit xs-1 heading bold giga push-3-4">Address</p>
+            <div class="unit m-1-2">
+            <div class="push pad-t-1-2 push-r">
               <label for="street">Street address</label>
               <input id="street" required>
             </div>
-            <div class="push pad-t-1-2">
+            <div class="push pad-t-1-2 push-r">
               <label for="city">City</label>
               <input id="city" required>
             </div>
-            <div class="push pad-t-1-2">
+            </div>
+            <div class="unit m-1-2">
+            <div class="push pad-t-1-2 push-r">
               <label for="province">Province</label>
               <select id="province">
                 <option value="">Select a province</option>
@@ -91,11 +106,13 @@
                 <option>Yukon</option>
               </select>
             </div>
-            <div class="pad-t-1-2">
+            <div class="pad-t-1-2 push-r">
               <label for="postal">Postal code</label>
               <input id="postal" required>
             </div>
           </div>
+        </div>
+        </div>
         </div>
         <div class="container">
           <fieldset class="push-2 pad-t-1-2">
